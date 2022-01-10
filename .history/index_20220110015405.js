@@ -520,9 +520,9 @@ else if (commandName === "!ayllon") {
   client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (commandName === "!obscure") {
+else if (commandName === "!ayllon") {
   
-  client.say(channel, `Puedes ver los capitulos emitidos de Obscure en 👉 YOUTUBE:https://www.youtube.com/playlist?list=PLWIDo9f0vTVsOE8TmH-kmzY0LuVmNwDMg  `)
+  client.say(channel, `Puedes ver los c 👉 YOUTUBE:https://www.youtube.com/playlist?list=PLWIDo9f0vTVsOE8TmH-kmzY0LuVmNwDMg `)
 
 }
 
