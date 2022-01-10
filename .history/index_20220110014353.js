@@ -517,7 +517,7 @@ else if (commandName === "!lau") {
 }
 else if (commandName === "!ayllon") {
   
-  client.say(channel, `No olvides seguir a 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
+  client.say(channel, `No olvides seguir a Cecilia Orson en sus redes 👉TWITCH https://www.twitch.tv/ceciliaorson  👉 INSTAGRAM: https://www.instagram.com/ceciliaorsonok  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
 

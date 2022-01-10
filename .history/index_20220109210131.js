@@ -515,11 +515,7 @@ else if (commandName === "!lau") {
   client.say(channel, `No olvides seguir a Salvador en sus redes 👉 FACEBOOK  https://www.facebook.com/salvadorfvaldes  👉 YOUTUBE: https://www.youtube.com/channel/UCL3kcQyWQFolMxgMWl2MmhA   NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (commandName === "!ayllon") {
-  
-  client.say(channel, `No olvides seguir a 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
 
-}
 
 
 
