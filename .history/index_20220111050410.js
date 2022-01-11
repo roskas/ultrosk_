@@ -573,9 +573,9 @@ else if (commandName === "!obscure") {
 
 else if (message.startsWith("!zambri") && user.username == "rosk_007") {
  
-  client.join("ultrosk_"), client.join("rosk_007")
+  client.join("ultrosk_")
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'zambraverso'), client.say('rosk_007', `!zambri`)
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'zambraverso')
   }).catch((err) => {console.log(`${err}`)
       //
   });

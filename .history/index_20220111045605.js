@@ -296,7 +296,8 @@ client.on("submysterygift", (channel, username, numbOfSubs, methods, userstate) 
 client.on("timeout", (channel, username, reason, duration, userstate) => {
   console.log(username, `ha sido expulsado del canal`)
 });
-
+client.join('Rosk_007');
+Client.join('ultrosk')
 
 client.on('gift', (giftObj) => {
   console.log(giftObj.toString());
@@ -571,14 +572,18 @@ else if (commandName === "!obscure") {
 
 }
 
-else if (message.startsWith("!zambri") && user.username == "rosk_007") {
+else if (message.startsWith("!zambri") && user.username == "Rosk_007") {
  
-  client.join("ultrosk_"), client.join("rosk_007")
+  
+  var persona  = message.split('@')[1];
+
+  client.host ('ultrosk_','YoAlucino')
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'zambraverso'), client.say('rosk_007', `!zambri`)
+      // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
+
 }
 
 
