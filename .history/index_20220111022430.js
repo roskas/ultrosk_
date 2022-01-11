@@ -63,12 +63,12 @@ function clips() {
 }
 function clips2() {
   
-  axios.get('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
+  axios.get('https://api.twitch.tv/kraken/clips/zambraverso')
   .then(resp => {
     
         
         console.log(resp.data);
-        client.say(process.env.CHANNEL_NAME, resp.data.data.url);
+        client.say(process.env.CHANNEL_NAME, resp.data.url);
     }
   )
   .catch(err => {

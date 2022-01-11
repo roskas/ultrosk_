@@ -48,11 +48,11 @@ function numerodeseguidores() {
 }
 function clips() {
   
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
-  axios.get(`https://api.twitch.tv/kraken/clips/zambraversofirst=10`)
+  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
+  axios.get(`https://api.twitch.tv/helix/users/follows?to_id=411027471&first=10`)
   .then(resp => {
     for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].url;
+      var thisName = resp.data.data[j].from_name;
      
 
 
@@ -63,12 +63,12 @@ function clips() {
 }
 function clips2() {
   
-  axios.get('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
+  axios.get('https://api.twitch.tv/kraken/clips/zambraverso')
   .then(resp => {
     
         
         console.log(resp.data);
-        client.say(process.env.CHANNEL_NAME, resp.data.data.url);
+        client.say(process.env.CHANNEL_NAME, resp.data.url);
     }
   )
   .catch(err => {

@@ -68,7 +68,7 @@ function clips2() {
     
         
         console.log(resp.data);
-        client.say(process.env.CHANNEL_NAME, resp.data.data.url);
+        client.say(process.env.CHANNEL_NAME, resp.data.url);
     }
   )
   .catch(err => {

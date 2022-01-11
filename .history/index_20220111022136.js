@@ -48,27 +48,28 @@ function numerodeseguidores() {
 }
 function clips() {
   
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
-  axios.get(`https://api.twitch.tv/kraken/clips/zambraversofirst=10`)
+  axios.get('https://api.twitch.tv/helix/clips?id=zambraverso&first=5')
   .then(resp => {
-    for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].url;
-     
-
-
-      console.log(thisName);
-      client.say(process.env.CHANNEL_NAME,` ${thisName}`)
-
+    
+        
+        client.say(process.env.CHANNEL_NAME,`clip cogido`);
+        console.log(resp.data);
+        client.say(process.env.CHANNEL_NAME, resp.data.url);
+    }
+  )
+  .catch(err => {
+    console.log(err);
+  })
 
 }
 function clips2() {
   
-  axios.get('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
+  axios.get('https://api.twitch.tv/kraken/clips/zambraverso')
   .then(resp => {
     
         
         console.log(resp.data);
-        client.say(process.env.CHANNEL_NAME, resp.data.data.url);
+        client.say(process.env.CHANNEL_NAME, resp.data.url);
     }
   )
   .catch(err => {
@@ -96,11 +97,11 @@ function espectadores() {
 
 function listadeseguidores() {
   
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
+  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 clips`);
   axios.get(`https://api.twitch.tv/helix/users/follows?to_id=411027471&first=10`)
   .then(resp => {
     for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].from_name;
+      var thisName = resp.data.data[j].url;
      
 
 
