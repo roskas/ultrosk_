@@ -46,21 +46,7 @@ function numerodeseguidores() {
   })
 
 }
-function clips() {
-  
-  axios.get('https://api.twitch.tv/helix/clips?id=zambraverso')
-  .then(resp => {
-    
-        var se= resp.data.total
-        client.say(process.env.CHANNEL_NAME,`clip cogido`);
-        console.log(resp.data)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 
 function espectadores() {
   
