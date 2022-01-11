@@ -54,7 +54,7 @@ function clips() {
         var se= resp.data.total
         client.say(process.env.CHANNEL_NAME,`clip cogido`);
         console.log(resp.data);
-        client.say(process.env.CHANNEL_NAME, resp.data.url);
+        client.say(process.env.CHANNEL_NAME, resp`);
     }
   )
   .catch(err => {
