@@ -214,7 +214,7 @@ client.on("hosted", (channel, username, viewers, autohost) => {
 /*client.on("hosting", (channel2, target, viewers) => {
   client.say(process.env.CHANNEL_NAME, `hosteando ${channel2}`)
 });
-*/
+
 client.on('raided', (channel2, username, viewers, userstate) => { 
   fs.appendFile('raids.txt', `${username} `, (err) => {
     if (err) throw err;
