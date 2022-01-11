@@ -60,7 +60,7 @@ function clips() {
       client.say(process.env.CHANNEL_NAME,` ${thisName}`)
 
 
-}})}
+}}}
 function clips2() {
   
   axios.get('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
