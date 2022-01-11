@@ -575,7 +575,7 @@ else if (message.startsWith("!zambri") && user.username == "Rosk_007") {
   
   var persona  = message.split('@')[1];
 
-  client.host ('ultrosk_','zambraverso')
+  client.host ('ultrosk','zambraverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)

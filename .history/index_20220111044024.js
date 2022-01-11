@@ -570,12 +570,12 @@ else if (commandName === "!obscure") {
 
 }
 
-else if (message.startsWith("!zambri") && user.username == "Rosk_007") {
+else if (message.startsWith("!zambri") && user.username) {
  
   
   var persona  = message.split('@')[1];
 
-  client.host ('ultrosk_','zambraverso')
+  client.host (channel,'Olmoose')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
