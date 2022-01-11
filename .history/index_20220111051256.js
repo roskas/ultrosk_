@@ -581,11 +581,11 @@ else if (message.startsWith("!zambri") && user.username == "rosk_007") {
   });
 }
 
-else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
+else if (message.startsWith("!zambri") && user.username == "rosk_007") {
  
   client.join("ultrosk_"), client.join("rosk_007")
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'olmoose'), client.say('rosk_007', `!Holmoose`)
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'zambraverso'), client.say('rosk_007', `!zambri`)
   }).catch((err) => {console.log(`${err}`)
       //
   });

@@ -585,7 +585,7 @@ else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
  
   client.join("ultrosk_"), client.join("rosk_007")
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'olmoose'), client.say('rosk_007', `!Holmoose`)
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'olmoose'), client.say('rosk_007', `!Hol`)
   }).catch((err) => {console.log(`${err}`)
       //
   });
