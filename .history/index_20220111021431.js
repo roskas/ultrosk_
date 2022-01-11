@@ -345,9 +345,9 @@ else if (message =="!clip") {
 
 
 }
-else if (message =="!clip2") {
+else if (message =="!clip") {
 
-  clips2();
+  clips();
 
 
 

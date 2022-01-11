@@ -345,15 +345,6 @@ else if (message =="!clip") {
 
 
 }
-else if (message =="!clip2") {
-
-  clips2();
-
-
-
-}
-
-
 else if (commandName === "!anxo"){
 
   client.say(channel,"👉 CORTO DE ANXO: https://www.youtube.com/watch?v=wFX7X1YgMMg")

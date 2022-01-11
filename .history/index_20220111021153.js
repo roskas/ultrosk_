@@ -62,12 +62,13 @@ function clips() {
   })
 
 }
-function clips2() {
+function clips() {
   
-  axios.get('https://api.twitch.tv/kraken/clips/zambraverso')
+  axios.get('https://api.twitch.tv/helix/clips?id=zambraverso')
   .then(resp => {
     
         
+        client.say(process.env.CHANNEL_NAME,`clip cogido`);
         console.log(resp.data);
         client.say(process.env.CHANNEL_NAME, resp.data.url);
     }
@@ -345,15 +346,6 @@ else if (message =="!clip") {
 
 
 }
-else if (message =="!clip2") {
-
-  clips2();
-
-
-
-}
-
-
 else if (commandName === "!anxo"){
 
   client.say(channel,"👉 CORTO DE ANXO: https://www.youtube.com/watch?v=wFX7X1YgMMg")

@@ -345,13 +345,7 @@ else if (message =="!clip") {
 
 
 }
-else if (message =="!clip2") {
 
-  clips2();
-
-
-
-}
 
 
 else if (commandName === "!anxo"){
