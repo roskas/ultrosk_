@@ -52,7 +52,7 @@ function clips() {
   axios.get(`https://api.twitch.tv/kraken/clips/zambraversofirst=10`)
   .then(resp => {
     for (var j = 0; j < 10; j++) {
-      var thisName = resp.data[j].url;
+      var thisName = resp.data.data[j].url;
      
 
 
@@ -63,7 +63,7 @@ function clips() {
 }})}
 function clips2() {
   
-  axios.post('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
+  axios.('https://api.twitch.tv/helix/clips?broadcaster_id=411027471')
   .then(resp => {
     
         
