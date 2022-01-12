@@ -405,9 +405,9 @@ else if (commandName === "!fueguitos") {
   client.say(channel, `GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit `)
 }
 
-else if (commandName === "!zambra") {
+else if (commandName === "!fueguitos") {
   
-  client.say(channel, `GlitchLit univer93Zambrana univer93Bebezambra GlitchLit GlitchLit GlitchLit univer93Zambrana univer93Bebezambra GlitchLit GlitchLit univer93Zambrana univer93Bebezambra  GlitchLit GlitchLit univer93Zambrana univer93Bebezambra GlitchLit GlitchLit univer93Zambrana univer93Bebezambra  GlitchLit GlitchLit GlitchLit GlitchLit `)
+  client.say(channel, `GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit GlitchLit `)
 }
 else if (commandName === "!temazo") {
   
