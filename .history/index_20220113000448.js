@@ -554,7 +554,7 @@ else if (commandName === "!lau") {
 }
 else if (commandName === "!canicas") {
   
-  client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
+  client.say(channel, `univer93Canica univer93Canica`)
 
 }else if (commandName === "!sandra") {
   

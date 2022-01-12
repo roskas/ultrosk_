@@ -554,7 +554,7 @@ else if (commandName === "!lau") {
 }
 else if (commandName === "!canicas") {
   
-  client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
+  client.say(channel, `No olvides seguir a Sandra en sus redes 👉 FACEBOOK  https://www.facebook.com/sandra.vaquerodiaz   👉 WEB https://www.mydance.zone/sandravaqueroescueladebaile  👉 INSTAGRAM:  https://www.instagram.com/sandravaqueroescueladebaile  NO OLVIDEIS SEGUIRLA!!! `)
 
 }else if (commandName === "!sandra") {
   

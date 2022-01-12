@@ -552,11 +552,7 @@ else if (commandName === "!lau") {
   client.say(channel, `No olvides seguir a Lau en sus redes 👉 INSTAGRAM:  https://www.instagram.com/kun_beleco_oficial  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
-else if (commandName === "!canicas") {
-  
-  client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
-
-}else if (commandName === "!sandra") {
+else if (commandName === "!sandra") {
   
   client.say(channel, `No olvides seguir a Sandra en sus redes 👉 FACEBOOK  https://www.facebook.com/sandra.vaquerodiaz   👉 WEB https://www.mydance.zone/sandravaqueroescueladebaile  👉 INSTAGRAM:  https://www.instagram.com/sandravaqueroescueladebaile  NO OLVIDEIS SEGUIRLA!!! `)
 
