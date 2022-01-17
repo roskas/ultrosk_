@@ -38,7 +38,7 @@ function numerodeseguidores() {
   .then(resp => {
     
         var se= resp.data.total
-        client.say('zambraverso',`Ya somos ${se} Zambranoides BloodTrail`);
+        client.say(process.env.CHANNEL_NAME,`Ya somos ${se} Zambranoides BloodTrail`);
         console.log(resp.data)
     }
   )
