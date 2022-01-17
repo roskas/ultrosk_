@@ -117,7 +117,7 @@ function espectadoresgames() {
   .then(resp => {
     
         var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
+        client.say(process.env.CHANNEL_NAME,`Ahora mismo hay ${se} Espectadores BloodTrail`);
         console.log(resp)
     }
   )

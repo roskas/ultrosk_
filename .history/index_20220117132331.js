@@ -117,7 +117,7 @@ function espectadoresgames() {
   .then(resp => {
     
         var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
+        client.say(process.env.CHANNEL_NAME,`Ahora mismo hay ${se} Espectadores BloodTrail`);
         console.log(resp)
     }
   )
@@ -475,19 +475,19 @@ if (commandName == "!seguidores" || commandName == "!Seguidores") {
   if (output) client.say(channel, output);
 }
 
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
+if (commandName == "!espectadores" || commandName == "!") {
     
   let canal = channel.slice(1);
   console.log(canal);
   let output = "";
   switch (canal) {
     case "zambraverso":
-      espectadores();   
+      numerodeseguidores();   
     output = ``;
       break;
 
     case "versogame":
-    espectadoresgames();
+    numerodeseguidoresgames(); 
     output = ``;
       break;
 
@@ -495,6 +495,22 @@ if (commandName == "!espectadores" || commandName == "!Espectadores") {
   }
   if (output) client.say(channel, output);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+else if (commandName === "!espectadores") {
+  espectadores();
+}
+
 
 else if (commandName === "!listaseg") 
 {

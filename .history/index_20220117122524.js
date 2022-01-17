@@ -47,22 +47,6 @@ function numerodeseguidores() {
   })
 
 }
-
-function numerodeseguidoresgames() {
-  
-  axios.get('https://api.twitch.tv/helix/users/follows?to_id=762914283')
-  .then(resp => {
-    
-        var se= resp.data.total
-        client.say('versogame',`Ya somos ${se} Zambranoides en el VersoGame!!! BloodTrail`);
-        console.log(resp.data)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
-
-}
 function clips() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
@@ -110,22 +94,7 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
-  
-    
-  axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
-  .then(resp => {
-    
-        var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
-        console.log(resp)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 function listadeseguidores() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
@@ -147,29 +116,6 @@ function listadeseguidores() {
 console.log(err);
 })
 }
-
-function listadeseguidoresgames() {
-  
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
-  axios.get(`https://api.twitch.tv/helix/users/follows?to_id=411027471&first=10`)
-  .then(resp => {
-    for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].from_name;
-     
-
-
-      console.log(thisName);
-      client.say(process.env.CHANNEL_NAME,` ${thisName}`)
-
-     
-  }
-              }
-)
-.catch(err => {
-console.log(err);
-})
-}
-
 function listadesubs() {
   
   client.say(process.env.CHANNEL_NAME,`SUBS DEL CANAL`);
@@ -325,7 +271,7 @@ client.on("leave", (channel, username, self) => {
 });
 
 client.on("mod", (channel, username) => {
-  client.say(channel, `Nuevo mod añadido al canal ${username}`)
+  client.say(channel, `Saludos Humanos, nuevo mod añadido al canal ${username}`)
 });
 
 
@@ -363,11 +309,6 @@ client.on('redemption', (cardObj )=> {
   console.log(cardObj.toString());
 });
 
-
-
-
-
-
 client.on("chat", (channel, user, message, self) => {
   
   if (self) return;    
@@ -386,7 +327,17 @@ client.on("chat", (channel, user, message, self) => {
   } 
 
 
+else if (commandName === "!redes"){
 
+  client.say(channel,"👉 DISCORD:https://discord.gg/WNRxVjy7a8 👉 TWITTER: https://twitter.com/zambraverso 👉YOUTUBE: https://www.youtube.com/channel/UCfF1geTl95QYlNTI2Fskx-Q 👉 INSTAGRAM: https://www.instagram.com/zambraverso/ 👉 CORREO: info@zambraverso.es")
+
+}
+
+else if (commandName === "!discord"){
+
+  client.say(channel,"👉 DISCORD:https://discord.gg/8JKNyh6xUE")
+
+}
 else if (message =="!clip") {
 
   clips();
@@ -401,13 +352,22 @@ else if (message =="!clip2") {
 
 
 }
+else if (commandName === "!expansivo"){
+
+  client.say(channel,"🔹 Por cada nuevo SEGUIDOR = 5 minutos 🔹🔹 Por cada nueva SUSCRIPCIÓN = 15 Minutos 🔹🔹 Por cada 100 BITS = 5 minutos minutos 🔹")
+
+}
 
 else if (commandName === "!anxo"){
 
   client.say(channel,"👉 CORTO DE ANXO: https://www.youtube.com/watch?v=wFX7X1YgMMg")
 
 }
+else if (commandName === "!olmoose") {
+  
+  client.say(channel, " No olvides seguir a Olmoose en sus redes 👉SPOTIFY https://open.spotify.com/artist/3pplWqjHniI4wrhjvBTLXa 👉WEB https://www.olmoose.com/  👉TWITCH https://www.twitch.tv/olmoose ")
 
+}
 
 else if (commandName === "!correo"){
 
@@ -423,6 +383,11 @@ else if (commandName === "!entrevistas"){
 }
 
 
+else if (commandName === "!expansivo"){
+
+  client.say(channel,"🔹 Por cada nuevo SEGUIDOR = 5 minutos 🔹🔹 Por cada nueva SUSCRIPCIÓN = 15 Minutos 🔹🔹 Por cada 100 BITS = 5 minutos 🔹🔹 Por compra de sobres = 5 minutos 🔹")
+
+}
 
 else if (commandName === "!cancioncanal"){
 
@@ -440,79 +405,99 @@ else if (commandName === "!moñacos") {
 
 }
 
+
+
+else if (commandName === "!sara") {
+  
+  client.say(channel, `No olvides seguir a Sara en sus redes 👉 WEB https://junecandyphotography.wixsite.com/junecandyphotography  👉 INSTAGRAM: https://www.instagram.com/junecandyphotography   NO OLVIDEIS SEGUIRLA!!! `)
+
+}
+
+else if (commandName === "!lau") {
+  
+  client.say(channel, `No olvides seguir a Lau en sus redes 👉 INSTAGRAM:  https://www.instagram.com/kun_beleco_oficial  NO OLVIDEIS SEGUIRLA!!! `)
+
+}
 else if (commandName === "!canicas") {
   
   client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
 
+}else if (commandName === "!sandra") {
+  
+  client.say(channel, `No olvides seguir a Sandra en sus redes 👉 FACEBOOK  https://www.facebook.com/sandra.vaquerodiaz   👉 WEB https://www.mydance.zone/sandravaqueroescueladebaile  👉 INSTAGRAM:  https://www.instagram.com/sandravaqueroescueladebaile  NO OLVIDEIS SEGUIRLA!!! `)
+
+}else if (commandName === "!tony") {
+  
+  client.say(channel, `No olvides seguir a Tony en sus redes 👉 FACEBOOK https://www.facebook.com/antonio.valdes.904 👉 WEB  http://www.antoniovaldes.fr  👉 INSTAGRAM: https://www.instagram.com/antonio.valdes/?hl=es  NO OLVIDEIS SEGUIRLO!!! `)
+
+}else if (commandName === "!salva") {
+  
+  client.say(channel, `No olvides seguir a Salvador en sus redes 👉 FACEBOOK  https://www.facebook.com/salvadorfvaldes  👉 YOUTUBE: https://www.youtube.com/channel/UCL3kcQyWQFolMxgMWl2MmhA   NO OLVIDEIS SEGUIRLO!!! `)
+
+}
+else if (commandName === "!ayllon") {
+  
+  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
+
+}
+else if (commandName === "!obscure") {
+  
+  client.say(channel, `Puedes ver los capitulos emitidos de Obscure en 👉 YOUTUBE:https://www.youtube.com/playlist?list=PLWIDo9f0vTVsOE8TmH-kmzY0LuVmNwDMg  `)
+
+}
+else if (commandName === "!donacion") {
+  
+  client.say(channel, `Si quieres apoyar al canal con una donacion, puedes hacerlo desde aqui https://streamelements.com/zambraversoa/tip `)
+}
+else if (commandName === "!moñacos") {
+  
+  client.say(channel, `Pagina de los moñacos!!!!! https://server.streamavatars.com/viewer.html?channel_id=411027471&platform=twitch `)
+
 }
 
+
+
+else if (commandName === "!sara") {
+  
+  client.say(channel, `No olvides seguir a Sara en sus redes 👉 WEB https://junecandyphotography.wixsite.com/junecandyphotography  👉 INSTAGRAM: https://www.instagram.com/junecandyphotography   NO OLVIDEIS SEGUIRLA!!! `)
+
+}
+
+else if (commandName === "!lau") {
+  
+  client.say(channel, `No olvides seguir a Lau en sus redes 👉 INSTAGRAM:  https://www.instagram.com/kun_beleco_oficial  NO OLVIDEIS SEGUIRLA!!! `)
+
+}
+else if (commandName === "!canicas") {
+  
+  client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
+
+}else if (commandName === "!sandra") {
+  
+  client.say(channel, `No olvides seguir a Sandra en sus redes 👉 FACEBOOK  https://www.facebook.com/sandra.vaquerodiaz   👉 WEB https://www.mydance.zone/sandravaqueroescueladebaile  👉 INSTAGRAM:  https://www.instagram.com/sandravaqueroescueladebaile  NO OLVIDEIS SEGUIRLA!!! `)
+
+}else if (commandName === "!tony") {
+  
+  client.say(channel, `No olvides seguir a Tony en sus redes 👉 FACEBOOK https://www.facebook.com/antonio.valdes.904 👉 WEB  http://www.antoniovaldes.fr  👉 INSTAGRAM: https://www.instagram.com/antonio.valdes/?hl=es  NO OLVIDEIS SEGUIRLO!!! `)
+
+}else if (commandName === "!salva") {
+  
+  client.say(channel, `No olvides seguir a Salvador en sus redes 👉 FACEBOOK  https://www.facebook.com/salvadorfvaldes  👉 YOUTUBE: https://www.youtube.com/channel/UCL3kcQyWQFolMxgMWl2MmhA   NO OLVIDEIS SEGUIRLO!!! `)
+
+}
+else if (commandName === "!ayllon") {
+  
+  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
+
+}
 else if (commandName === "!obscure") {
   
   client.say(channel, `Puedes ver los capitulos emitidos de Obscure en 👉 YOUTUBE:https://www.youtube.com/playlist?list=PLWIDo9f0vTVsOE8TmH-kmzY0LuVmNwDMg  `)
 
 }
 
-//info canal
-
-if (commandName == "!seguidores" || commandName == "!Seguidores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      numerodeseguidores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    numerodeseguidoresgames(); 
-    output = ``;
-      break;
 
 
-  }
-  if (output) client.say(channel, output);
-}
-
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
-
-
-  }
-  if (output) client.say(channel, output);
-}
-
-else if (commandName === "!listaseg") 
-{
-  listadeseguidores();
-
-}
-//comandos comunes
-else if (commandName === "!redes"){
-
-  client.say(channel,"👉 DISCORD:https://discord.gg/WNRxVjy7a8 👉 TWITTER: https://twitter.com/zambraverso 👉YOUTUBE: https://www.youtube.com/channel/UCfF1geTl95QYlNTI2Fskx-Q 👉 INSTAGRAM: https://www.instagram.com/zambraverso/ 👉 CORREO: info@zambraverso.es")
-
-}
-
-else if (commandName === "!discord"){
-
-  client.say(channel,"👉 DISCORD:https://discord.gg/8JKNyh6xUE")
-
-}
 
 else if (commandName === "!aplausos") {
   
@@ -533,16 +518,7 @@ else if (commandName === "!temazo") {
   client.say(channel, `SingsNote SingsMic SingsMic SingsNote SingsNote SingsNote SingsMic SingsNote SingsNote SingsMic SingsNote SingsNote SingsMic SingsMic `)
 
 }
-else if (commandName === "!expansivo"){
 
-  client.say(channel,"🔹 Por cada nuevo SEGUIDOR = 5 minutos 🔹🔹 Por cada nueva SUSCRIPCIÓN = 15 Minutos 🔹🔹 Por cada 100 BITS = 5 minutos minutos 🔹")
-
-}
-else if (commandName === "!olmoose") {
-  
-  client.say(channel, " No olvides seguir a Olmoose en sus redes 👉SPOTIFY https://open.spotify.com/artist/3pplWqjHniI4wrhjvBTLXa 👉WEB https://www.olmoose.com/  👉TWITCH https://www.twitch.tv/olmoose ")
-
-}
 
 else if (commandName === "!amazon") {
   
@@ -654,11 +630,6 @@ else if (commandName === "!ceciliaorson") {
   client.say(channel, `No olvides seguir a Cecilia Orson en sus redes 👉TWITCH https://www.twitch.tv/ceciliaorson  👉 INSTAGRAM: https://www.instagram.com/ceciliaorsonok  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
-else if (commandName === "!ayllon") {
-  
-  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
-
-}
 
 else if (commandName === "!anasañiz") {
   
@@ -685,15 +656,7 @@ else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
       //
   });client.clear(channel)
 }
-else if (message.startsWith("!Hversogame") && user.username == "rosk_007") {
- 
-  client.join("ultrosk_"), client.join("rosk_007")
-  .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'versogame'), client.say('rosk_007', `!Hversogame`)
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });client.clear(channel)
-}
+
 else if (message.startsWith("!Halucino") && user.username == "rosk_007") {
  
   client.join("ultrosk_"), client.join("rosk_007")
@@ -702,6 +665,27 @@ else if (message.startsWith("!Halucino") && user.username == "rosk_007") {
   }).catch((err) => {console.log(`${err}`)
       //
   });
+}
+
+
+
+
+
+
+
+else if (commandName === "!seguidores") {
+  numerodeseguidores();
+}
+
+else if (commandName === "!espectadores") {
+  espectadores();
+}
+
+
+else if (commandName === "!listaseg") 
+{
+  listadeseguidores();
+
 }
 
 

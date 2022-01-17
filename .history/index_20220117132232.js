@@ -110,14 +110,14 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
+function espectadores() {
   
     
   axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
   .then(resp => {
     
         var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
+        client.say(process.env.CHANNEL_NAME,`Ahora mismo hay ${se} Espectadores BloodTrail`);
         console.log(resp)
     }
   )
@@ -475,26 +475,22 @@ if (commandName == "!seguidores" || commandName == "!Seguidores") {
   if (output) client.say(channel, output);
 }
 
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
 
 
-  }
-  if (output) client.say(channel, output);
+
+
+
+
+
+
+
+
+
+
+else if (commandName === "!espectadores") {
+  espectadores();
 }
+
 
 else if (commandName === "!listaseg") 
 {

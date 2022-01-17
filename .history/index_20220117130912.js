@@ -54,7 +54,7 @@ function numerodeseguidoresgames() {
   .then(resp => {
     
         var se= resp.data.total
-        client.say('versogame',`Ya somos ${se} Zambranoides en el VersoGame!!! BloodTrail`);
+        client.say(process.env.CHANNEL_NAME,`Ya somos ${se}!!! BloodTrail`);
         console.log(resp.data)
     }
   )
@@ -110,22 +110,7 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
-  
-    
-  axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
-  .then(resp => {
-    
-        var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
-        console.log(resp)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 function listadeseguidores() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
@@ -454,20 +439,18 @@ else if (commandName === "!obscure") {
 
 //info canal
 
-if (commandName == "!seguidores" || commandName == "!Seguidores") {
+if (commandName == "!seguidores" || commandName === "!Seguidores") {
     
   let canal = channel.slice(1);
   console.log(canal);
   let output = "";
   switch (canal) {
     case "zambraverso":
-      numerodeseguidores();   
-    output = ``;
+      output = numerodeseguidores;
       break;
 
     case "versogame":
-    numerodeseguidoresgames(); 
-    output = ``;
+      output = numerodeseguidoresgames;
       break;
 
 
@@ -475,26 +458,22 @@ if (commandName == "!seguidores" || commandName == "!Seguidores") {
   if (output) client.say(channel, output);
 }
 
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
 
 
-  }
-  if (output) client.say(channel, output);
+
+
+
+
+
+
+
+
+
+
+else if (commandName === "!espectadores") {
+  espectadores();
 }
+
 
 else if (commandName === "!listaseg") 
 {

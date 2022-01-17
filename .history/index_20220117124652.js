@@ -47,22 +47,6 @@ function numerodeseguidores() {
   })
 
 }
-
-function numerodeseguidoresgames() {
-  
-  axios.get('https://api.twitch.tv/helix/users/follows?to_id=762914283')
-  .then(resp => {
-    
-        var se= resp.data.total
-        client.say('versogame',`Ya somos ${se} Zambranoides en el VersoGame!!! BloodTrail`);
-        console.log(resp.data)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
-
-}
 function clips() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
@@ -110,22 +94,7 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
-  
-    
-  axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
-  .then(resp => {
-    
-        var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
-        console.log(resp)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 function listadeseguidores() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
@@ -147,29 +116,6 @@ function listadeseguidores() {
 console.log(err);
 })
 }
-
-function listadeseguidoresgames() {
-  
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
-  axios.get(`https://api.twitch.tv/helix/users/follows?to_id=411027471&first=10`)
-  .then(resp => {
-    for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].from_name;
-     
-
-
-      console.log(thisName);
-      client.say(process.env.CHANNEL_NAME,` ${thisName}`)
-
-     
-  }
-              }
-)
-.catch(err => {
-console.log(err);
-})
-}
-
 function listadesubs() {
   
   client.say(process.env.CHANNEL_NAME,`SUBS DEL CANAL`);
@@ -325,7 +271,7 @@ client.on("leave", (channel, username, self) => {
 });
 
 client.on("mod", (channel, username) => {
-  client.say(channel, `Nuevo mod añadido al canal ${username}`)
+  client.say(channel, `Saludos Humanos, nuevo mod añadido al canal ${username}`)
 });
 
 
@@ -362,11 +308,6 @@ client.on('purchase', (purchaseObj) => {
 client.on('redemption', (cardObj )=> {
   console.log(cardObj.toString());
 });
-
-
-
-
-
 
 client.on("chat", (channel, user, message, self) => {
   
@@ -452,55 +393,6 @@ else if (commandName === "!obscure") {
 
 }
 
-//info canal
-
-if (commandName == "!seguidores" || commandName == "!Seguidores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      numerodeseguidores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    numerodeseguidoresgames(); 
-    output = ``;
-      break;
-
-
-  }
-  if (output) client.say(channel, output);
-}
-
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
-
-
-  }
-  if (output) client.say(channel, output);
-}
-
-else if (commandName === "!listaseg") 
-{
-  listadeseguidores();
-
-}
 //comandos comunes
 else if (commandName === "!redes"){
 
@@ -702,6 +594,27 @@ else if (message.startsWith("!Halucino") && user.username == "rosk_007") {
   }).catch((err) => {console.log(`${err}`)
       //
   });
+}
+
+
+
+
+
+
+
+else if (commandName === "!seguidores") {
+  numerodeseguidores();
+}
+
+else if (commandName === "!espectadores") {
+  espectadores();
+}
+
+
+else if (commandName === "!listaseg") 
+{
+  listadeseguidores();
+
 }
 
 

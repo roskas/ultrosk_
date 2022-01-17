@@ -47,22 +47,6 @@ function numerodeseguidores() {
   })
 
 }
-
-function numerodeseguidoresgames() {
-  
-  axios.get('https://api.twitch.tv/helix/users/follows?to_id=762914283')
-  .then(resp => {
-    
-        var se= resp.data.total
-        client.say('versogame',`Ya somos ${se} Zambranoides en el VersoGame!!! BloodTrail`);
-        console.log(resp.data)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
-
-}
 function clips() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
@@ -110,22 +94,7 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
-  
-    
-  axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
-  .then(resp => {
-    
-        var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
-        console.log(resp)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 function listadeseguidores() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
@@ -147,29 +116,6 @@ function listadeseguidores() {
 console.log(err);
 })
 }
-
-function listadeseguidoresgames() {
-  
-  client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
-  axios.get(`https://api.twitch.tv/helix/users/follows?to_id=411027471&first=10`)
-  .then(resp => {
-    for (var j = 0; j < 10; j++) {
-      var thisName = resp.data.data[j].from_name;
-     
-
-
-      console.log(thisName);
-      client.say(process.env.CHANNEL_NAME,` ${thisName}`)
-
-     
-  }
-              }
-)
-.catch(err => {
-console.log(err);
-})
-}
-
 function listadesubs() {
   
   client.say(process.env.CHANNEL_NAME,`SUBS DEL CANAL`);
@@ -325,7 +271,7 @@ client.on("leave", (channel, username, self) => {
 });
 
 client.on("mod", (channel, username) => {
-  client.say(channel, `Nuevo mod añadido al canal ${username}`)
+  client.say(channel, `Saludos Humanos, nuevo mod añadido al canal ${username}`)
 });
 
 
@@ -363,11 +309,6 @@ client.on('redemption', (cardObj )=> {
   console.log(cardObj.toString());
 });
 
-
-
-
-
-
 client.on("chat", (channel, user, message, self) => {
   
   if (self) return;    
@@ -386,7 +327,17 @@ client.on("chat", (channel, user, message, self) => {
   } 
 
 
+else if (commandName === "!redes"){
 
+  client.say(channel,"👉 DISCORD:https://discord.gg/WNRxVjy7a8 👉 TWITTER: https://twitter.com/zambraverso 👉YOUTUBE: https://www.youtube.com/channel/UCfF1geTl95QYlNTI2Fskx-Q 👉 INSTAGRAM: https://www.instagram.com/zambraverso/ 👉 CORREO: info@zambraverso.es")
+
+}
+
+else if (commandName === "!discord"){
+
+  client.say(channel,"👉 DISCORD:https://discord.gg/8JKNyh6xUE")
+
+}
 else if (message =="!clip") {
 
   clips();
@@ -440,6 +391,25 @@ else if (commandName === "!moñacos") {
 
 }
 
+else if (commandName === "!olmoose") {
+  
+  client.say(channel, " No olvides seguir a Olmoose en sus redes 👉SPOTIFY https://open.spotify.com/artist/3pplWqjHniI4wrhjvBTLXa 👉WEB https://www.olmoose.com/  👉TWITCH https://www.twitch.tv/olmoose ")
+
+}
+
+
+
+else if (commandName === "!sara") {
+  
+  client.say(channel, `No olvides seguir a Sara en sus redes 👉 WEB https://junecandyphotography.wixsite.com/junecandyphotography  👉 INSTAGRAM: https://www.instagram.com/junecandyphotography   NO OLVIDEIS SEGUIRLA!!! `)
+
+}
+
+else if (commandName === "!lau") {
+  
+  client.say(channel, `No olvides seguir a Lau en sus redes 👉 INSTAGRAM:  https://www.instagram.com/kun_beleco_oficial  NO OLVIDEIS SEGUIRLA!!! `)
+
+}
 else if (commandName === "!canicas") {
   
   client.say(channel, `univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica univer93Canica`)
@@ -452,67 +422,8 @@ else if (commandName === "!obscure") {
 
 }
 
-//info canal
-
-if (commandName == "!seguidores" || commandName == "!Seguidores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      numerodeseguidores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    numerodeseguidoresgames(); 
-    output = ``;
-      break;
-
-
-  }
-  if (output) client.say(channel, output);
-}
-
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
-
-
-  }
-  if (output) client.say(channel, output);
-}
-
-else if (commandName === "!listaseg") 
-{
-  listadeseguidores();
-
-}
 //comandos comunes
-else if (commandName === "!redes"){
 
-  client.say(channel,"👉 DISCORD:https://discord.gg/WNRxVjy7a8 👉 TWITTER: https://twitter.com/zambraverso 👉YOUTUBE: https://www.youtube.com/channel/UCfF1geTl95QYlNTI2Fskx-Q 👉 INSTAGRAM: https://www.instagram.com/zambraverso/ 👉 CORREO: info@zambraverso.es")
-
-}
-
-else if (commandName === "!discord"){
-
-  client.say(channel,"👉 DISCORD:https://discord.gg/8JKNyh6xUE")
-
-}
 
 else if (commandName === "!aplausos") {
   
@@ -538,11 +449,7 @@ else if (commandName === "!expansivo"){
   client.say(channel,"🔹 Por cada nuevo SEGUIDOR = 5 minutos 🔹🔹 Por cada nueva SUSCRIPCIÓN = 15 Minutos 🔹🔹 Por cada 100 BITS = 5 minutos minutos 🔹")
 
 }
-else if (commandName === "!olmoose") {
-  
-  client.say(channel, " No olvides seguir a Olmoose en sus redes 👉SPOTIFY https://open.spotify.com/artist/3pplWqjHniI4wrhjvBTLXa 👉WEB https://www.olmoose.com/  👉TWITCH https://www.twitch.tv/olmoose ")
 
-}
 
 else if (commandName === "!amazon") {
   
@@ -702,6 +609,27 @@ else if (message.startsWith("!Halucino") && user.username == "rosk_007") {
   }).catch((err) => {console.log(`${err}`)
       //
   });
+}
+
+
+
+
+
+
+
+else if (commandName === "!seguidores") {
+  numerodeseguidores();
+}
+
+else if (commandName === "!espectadores") {
+  espectadores();
+}
+
+
+else if (commandName === "!listaseg") 
+{
+  listadeseguidores();
+
 }
 
 

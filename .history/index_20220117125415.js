@@ -47,22 +47,6 @@ function numerodeseguidores() {
   })
 
 }
-
-function numerodeseguidoresgames() {
-  
-  axios.get('https://api.twitch.tv/helix/users/follows?to_id=762914283')
-  .then(resp => {
-    
-        var se= resp.data.total
-        client.say('versogame',`Ya somos ${se} Zambranoides en el VersoGame!!! BloodTrail`);
-        console.log(resp.data)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
-
-}
 function clips() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 CLIPS DEL CANAL`);
@@ -110,22 +94,7 @@ function espectadores() {
   })
 
 }
-function espectadoresgames() {
-  
-    
-  axios.get('http://tmi.twitch.tv/group/user/versogame/chatters')
-  .then(resp => {
-    
-        var se= resp.data.chatter_count;
-        client.say('versogame',`Ahora mismo hay ${se} Espectadores BloodTrail`);
-        console.log(resp)
-    }
-  )
-  .catch(err => {
-    console.log(err);
-  })
 
-}
 function listadeseguidores() {
   
   client.say(process.env.CHANNEL_NAME,`ULTIMOS 10 SEGUIDORES DEL CANAL`);
@@ -454,6 +423,10 @@ else if (commandName === "!obscure") {
 
 //info canal
 
+else if (commandName === "!seguidores") {
+  numerodeseguidores();
+}
+
 if (commandName == "!seguidores" || commandName == "!Seguidores") {
     
   let canal = channel.slice(1);
@@ -461,13 +434,11 @@ if (commandName == "!seguidores" || commandName == "!Seguidores") {
   let output = "";
   switch (canal) {
     case "zambraverso":
-      numerodeseguidores();   
-    output = ``;
+      output = nu`;
       break;
 
     case "versogame":
-    numerodeseguidoresgames(); 
-    output = ``;
+      output = ;
       break;
 
 
@@ -475,26 +446,22 @@ if (commandName == "!seguidores" || commandName == "!Seguidores") {
   if (output) client.say(channel, output);
 }
 
-if (commandName == "!espectadores" || commandName == "!Espectadores") {
-    
-  let canal = channel.slice(1);
-  console.log(canal);
-  let output = "";
-  switch (canal) {
-    case "zambraverso":
-      espectadores();   
-    output = ``;
-      break;
-
-    case "versogame":
-    espectadoresgames();
-    output = ``;
-      break;
 
 
-  }
-  if (output) client.say(channel, output);
+
+
+
+
+
+
+
+
+
+
+else if (commandName === "!espectadores") {
+  espectadores();
 }
+
 
 else if (commandName === "!listaseg") 
 {
