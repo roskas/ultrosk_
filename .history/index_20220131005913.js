@@ -416,7 +416,6 @@ else if (commandName === "!correo"){
 }
  
 
-
 else if (commandName === "!entrevistas"){
 
   client.say(channel,"Puedes ver todas las entrevistas de Zambraverso Deluxe en : https://youtube.com/playlist?list=PLWIDo9f0vTVu38iBoO8qZcA2JH7Rui4L2")
