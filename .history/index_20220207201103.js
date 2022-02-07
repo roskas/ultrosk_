@@ -675,11 +675,11 @@ else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.us
  
   client.host (rosk_007,'zambraverso');
   
-  client.host (versogame,'zambraverso');
+  client.host ('versogame','zambraverso');
   
-  client.host (potajontas,'zambraverso');
+  client.host ('potajontas','zambraverso');
   
-  client.host (man_darinas,'zambraverso');
+  client.host ('man_darinas','zambraverso');
  
 
 }
