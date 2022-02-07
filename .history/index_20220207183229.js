@@ -668,7 +668,7 @@ else if (commandName === "!anasañiz") {
 }
 else if (commandName === "!Leo") {
   
-  client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 INSTAGRAM https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
+  client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 INSTAGRAM:https://twitter.com/leosusana  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
 else if (message.startsWith("!zambri") && user.username == "rosk_007") {

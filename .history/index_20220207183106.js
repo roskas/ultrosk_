@@ -666,9 +666,9 @@ else if (commandName === "!anasañiz") {
   client.say(channel, `No olvides seguir a Ana Sañiz en sus redes 👉 WEB https://www.anasañiz.com  👉 INSTAGRAM: https://www.instagram.com/anasanniz/  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
-else if (commandName === "!Leo") {
+else if (commandName === "!anasañiz") {
   
-  client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 INSTAGRAM https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
+  client.say(channel, `No olvides seguir a Ana Sañiz en sus redes 👉 WEB https://www.anasañiz.com  👉 INSTAGRAM: https://www.instagram.com/anasanniz/  NO OLVIDEIS SEGUIRLA!!! `)
 
 }
 else if (message.startsWith("!zambri") && user.username == "rosk_007") {
