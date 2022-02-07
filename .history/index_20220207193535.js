@@ -673,19 +673,19 @@ else if (commandName === "!Leo") {
 }
 else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.username == "potajontas" && user.username == "man_darinas" && user.username == "zambraverso" && user.username == "versogame") {
  
-  client.host ('rosk_007','zambraverso')
+  client.host ("rosk_007",'zambraverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('versogame','zambraverso')
+  client.host ("versogame",'zambraverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('potajontas','zambraverso')
+  client.host ("potajontas",'zambraverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
