@@ -22,7 +22,7 @@ const options = {
     username: process.env.BOT_USERNAME,
     password: process.env.OAUTH_TOKEN,
   },
-  channels: ["zambraverso", "versogame", "potajontas", "rosk_007", "man_darinas"]
+  channels: ["zambraverso", "versogame", "potajontas", "rosk_007"]
 };
 
 
@@ -671,7 +671,7 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 INSTAGRAM https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.username == "potajontas" && user.username == "man_darinas" && user.username == "zambraverso" && user.username == "versogame") {
+else if (message.startsWith("!zambri") && user.username == "rosk_007") {
  
   client.host (rosk_007,'zambraverso')
   .then((data) => {
@@ -685,46 +685,15 @@ else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.us
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (potajontas,'zambraverso')
+  client.host (channel,'zambraverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (man_darinas,'zambraverso')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+
 }
-else if (message.startsWith("!verso") && user.username == "rosk_007" && user.username == "potajontas" && user.username == "man_darinas" && user.username == "zambraverso" && user.username == "versogame") {
- 
-  client.host (rosk_007,'Versogame')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host (zambraverso,'Versogame')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host (potajontas,'Versogame')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host (man_darinas,'Versogame')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-}
+
 else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
  
   client.join("ultrosk_"), client.join("rosk_007")

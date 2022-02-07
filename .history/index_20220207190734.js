@@ -22,7 +22,7 @@ const options = {
     username: process.env.BOT_USERNAME,
     password: process.env.OAUTH_TOKEN,
   },
-  channels: ["zambraverso", "versogame", "potajontas", "rosk_007", "man_darinas"]
+  channels: ["zambraverso", "versogame", "potajontas", "rosk_007", ""]
 };
 
 

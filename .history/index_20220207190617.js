@@ -22,7 +22,7 @@ const options = {
     username: process.env.BOT_USERNAME,
     password: process.env.OAUTH_TOKEN,
   },
-  channels: ["zambraverso", "versogame", "potajontas", "rosk_007", "man_darinas"]
+  channels: ["zambraverso", "versogame", "potajontas", "rosk_007"]
 };
 
 
@@ -706,24 +706,19 @@ else if (message.startsWith("!verso") && user.username == "rosk_007" && user.use
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (zambraverso,'Versogame')
+  client.host (versogame,'Versogame')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (potajontas,'Versogame')
+  client.host (potajontas,'zambrVersogameaverso')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (man_darinas,'Versogame')
-  .then((data) => {
-      // data returns [channel, username, reason]
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+
 }
 else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
  

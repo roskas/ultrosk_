@@ -22,7 +22,7 @@ const options = {
     username: process.env.BOT_USERNAME,
     password: process.env.OAUTH_TOKEN,
   },
-  channels: ["zambraverso", "versogame", "potajontas", "rosk_007", "man_darinas"]
+  channels: ["zambraverso", "versogame", "potajontas", "rosk_007"]
 };
 
 
@@ -706,7 +706,7 @@ else if (message.startsWith("!verso") && user.username == "rosk_007" && user.use
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host (zambraverso,'Versogame')
+  client.host (,'Versogame')
   .then((data) => {
       // data returns [channel, username, reason]
   }).catch((err) => {console.log(`${err}`)
