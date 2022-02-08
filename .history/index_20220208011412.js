@@ -671,7 +671,7 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" ) {
+else if (message.startsWith("!zambri") && user.username == "rosk_007" ) {
  
     
   client.host ('rosk_007','zambraverso'),  client.host ('versogame','zambraverso'), client.host ('potajontas','zambraverso'), client.host ('man_darinas','zambraverso')
@@ -695,32 +695,34 @@ else if (message.startsWith("!verso") && user.username == "rosk_007" ) {
   
 
 }
-
-else if (message.startsWith("!alucina") && user.username == "rosk_007" ) {
+else if (message.startsWith("!Holmoose") && user.username == "rosk_007") {
  
-    
-  client.host ('rosk_007','yoalucino'),  client.host ('zambraverso','yoalucino'), client.host ('potajontas','yoalucino'), client.host ('man_darinas','yoalucino')
+  client.join("ultrosk_"), client.join("rosk_007")
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`)
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'olmoose'), client.say('rosk_007', `!Holmoose`)
+  }).catch((err) => {console.log(`${err}`)
+      //
+  });client.clear(channel)
+}
+else if (message.startsWith("!Hversogame") && user.username == "rosk_007") {
+ 
+  client.join("ultrosk_"), client.join("rosk_007")
+  .then((data) => {
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'versogame'), client.say('rosk_007', `!Hversogame`)
+  }).catch((err) => {console.log(`${err}`)
+      //
+  });client.clear(channel)
+}
+else if (message.startsWith("!Halucino") && user.username == "rosk_007") {
+ 
+  client.join("ultrosk_"), client.join("rosk_007")
+  .then((data) => {
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'YoAlucino'), client.say('rosk_007', `!Hyoalucino`)
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  
-
 }
 
-else if (message.startsWith("!alce") && user.username == "rosk_007" ) {
- 
-    
-  client.host ('rosk_007','yoalucino'),  client.host ('zambraverso','yoalucino'), client.host ('potajontas','yoalucino'), client.host ('man_darinas','yoalucino')
-  .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`)
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  
-
-}
 
 else if (message.startsWith("!clear")) {
   

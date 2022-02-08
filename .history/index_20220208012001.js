@@ -671,7 +671,7 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" ) {
+else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" ) {
  
     
   client.host ('rosk_007','zambraverso'),  client.host ('versogame','zambraverso'), client.host ('potajontas','zambraverso'), client.host ('man_darinas','zambraverso')
