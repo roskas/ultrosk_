@@ -761,7 +761,7 @@ else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.
     
   }).catch((err) => {console.log(`${err}`)
       //
-  });client.host ('versogame','yoalucino')
+  });client.host ('zambraverso','olmoose')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
