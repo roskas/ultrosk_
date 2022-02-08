@@ -831,31 +831,31 @@ else if (message.startsWith("!pino") && (user.username == "rosk_007" || user.use
     
   }).catch((err) => {console.log(`${err}`)
       //
-  }); client.host ('ultrosk_','adrivision')
+  }); client.host ('ultrosk_','olmoosse')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('zambraverso','adrivision')
+  client.host ('zambraverso','olmoose')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('versogame','adrivision')
+  client.host ('versogame','olmoose')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('potajontas','adrivision')
+  client.host ('potajontas','olmoose')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('man_darinas','adrivision')
+  client.host ('man_darinas','olmoose')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)

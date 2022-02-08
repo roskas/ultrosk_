@@ -823,46 +823,6 @@ else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.use
 
 }
 
-else if (message.startsWith("!pino") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame" )) {
- 
-    
-  client.host ('rosk_007','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  }); client.host ('ultrosk_','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('zambraverso','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('versogame','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('potajontas','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('man_darinas','adrivision')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-
-}
 
 
 else if (message.startsWith("!clear")) {
