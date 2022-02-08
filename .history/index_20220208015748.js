@@ -706,7 +706,7 @@ else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.u
   });
 
 }
-else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame" )) {
+else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','versogame')
@@ -742,7 +742,7 @@ else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.us
 
 }
 
-else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas"  || user.username == "zambraverso" || user.username == "versogame")) {
+else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','yoalucino')
@@ -782,7 +782,7 @@ else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.
 
 }
 
-else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame" )) {
+else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','olmoose')

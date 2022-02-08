@@ -671,7 +671,7 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame"  )) {
+else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "mandarinas"  )) {
  
     
   client.host ('rosk_007','zambraverso')
@@ -706,7 +706,7 @@ else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.u
   });
 
 }
-else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame" )) {
+else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','versogame')
@@ -742,7 +742,7 @@ else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.us
 
 }
 
-else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas"  || user.username == "zambraverso" || user.username == "versogame")) {
+else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','yoalucino')
@@ -782,7 +782,7 @@ else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.
 
 }
 
-else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame" )) {
+else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
  
     
   client.host ('rosk_007','olmoose')
