@@ -673,14 +673,14 @@ else if (commandName === "!Leo") {
 }
 else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.username == "potajontas" && user.username == "man_darinas" && user.username == "zambraverso" && user.username == "versogame") {
  
-    
-  client.host ("rosk_007",'zambraverso'),  client.host ('versogame','zambraverso'), client.host ('potajontas','zambraverso'), client.host ('man_darinas','zambraverso')
-  .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`)
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });client.clear(channel)
+  client.host ("rosk_007",'zambraverso'),
   
+  client.host ('versogame','zambraverso');
+  
+  client.host (potajontas,'zambraverso');
+  
+  client.host (man_darinas,'zambraverso');
+ 
 
 }
 else if (message.startsWith("!verso") && user.username == "rosk_007" && user.username == "potajontas" && user.username == "man_darinas" && user.username == "zambraverso" && user.username == "versogame") {

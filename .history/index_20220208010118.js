@@ -676,7 +676,7 @@ else if (message.startsWith("!zambri") && user.username == "rosk_007" && user.us
     
   client.host ("rosk_007",'zambraverso'),  client.host ('versogame','zambraverso'), client.host ('potajontas','zambraverso'), client.host ('man_darinas','zambraverso')
   .then((data) => {
-    client.say('ultrosk_', `Saludos humanos`)
+    client.say('ultrosk_', `Saludos humanos`), client.host ('ultrosk_', 'versogame'), client.say('rosk_007', `!Hversogame`)
   }).catch((err) => {console.log(`${err}`)
       //
   });client.clear(channel)
