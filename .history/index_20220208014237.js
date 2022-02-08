@@ -750,11 +750,6 @@ else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.
     
   }).catch((err) => {console.log(`${err}`)
       //
-  }); client.host ('ultrosk_','yoalucino')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
   });
   client.host ('zambraverso','yoalucino')
   .then((data) => {
@@ -781,11 +776,6 @@ else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.use
  
     
   client.host ('rosk_007','olmoose')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  }); client.host ('ultrosk_','olmoosse')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)

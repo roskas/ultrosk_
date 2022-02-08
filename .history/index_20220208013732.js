@@ -680,12 +680,6 @@ else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.u
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('ultrosk_','zambraverso')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
   client.host ('versogame','zambraverso')
   .then((data) => {
     
@@ -693,122 +687,47 @@ else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.u
       //
   });
   client.host ('potajontas','zambraverso')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+ 
   client.host ('man_darinas','zambraverso')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+ 
 
 }
-else if (message.startsWith("!verso") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
+else if (message.startsWith("!verso") && user.username == "rosk_007" ) {
  
     
-  client.host ('rosk_007','versogame')
+  client.host ('rosk_007','versogame'),  client.host ('zambraverso','versogame'), client.host ('potajontas','versogame'), client.host ('man_darinas','versogame')
   .then((data) => {
-    
+    client.say('ultrosk_', `Saludos humanos`)
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('ultrosk_','versogame')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('zambraverso','versogame')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('potajontas','versogame')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('man_darinas','versogame')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+  
 
 }
 
-else if (message.startsWith("!alucina") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
+else if (message.startsWith("!alucina") && user.username == "rosk_007" ) {
  
     
-  client.host ('rosk_007','yoalucino')
+  client.host ('rosk_007','yoalucino'),  client.host ('zambraverso','yoalucino'), client.host ('potajontas','yoalucino'), client.host ('man_darinas','yoalucino')
   .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  }); client.host ('ultrosk_','yoalucino')
-  .then((data) => {
-    
+    client.say('ultrosk_', `Saludos humanos`)
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('zambraverso','yoalucino')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('potajontas','yoalucino')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('man_darinas','yoalucino')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+  
 
 }
 
-else if (message.startsWith("!alce") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" )) {
+else if (message.startsWith("!alce") && user.username == "rosk_007" ) {
  
     
-  client.host ('rosk_007','olmoose')
+  client.host ('rosk_007','olmoose'),  client.host ('zambraverso','olmoose'), client.host ('potajontas','olmoose'), client.host ('man_darinas','olmoose')
   .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  }); client.host ('ultrosk_','olmoosse')
-  .then((data) => {
-    
+    client.say('ultrosk_', `Saludos humanos`)
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('zambraverso','olmoose')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('potajontas','olmoose')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
-  client.host ('man_darinas','olmoose')
-  .then((data) => {
-    
-  }).catch((err) => {console.log(`${err}`)
-      //
-  });
+  
 
 }
 
