@@ -657,7 +657,7 @@ else if (commandName === "!ceciliaorson") {
 }
 else if (commandName === "!ayllon") {
   
-  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia  NO OLVIDEIS SEGUIRLO!!! `)
+  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia 👉 SPOTIFY: https://open.spotify.com/artist/3X6Ziq4TUUnwp0tfnLzHEM   NO OLVIDEIS SEGUIRLO!!! `)
 
 }
 
@@ -1075,13 +1075,22 @@ else if (message.startsWith("!timeout")) {
 
 }
 
+else if (commandName === "!ultrosk") {
+    
+  let frases = ["jamas me cansare,jamas mostrare piedad,jamas descansare hasta que esten todos destruidos,esto no me produce placer,solo es la unica solucion,debe haber paz y orden 
+  admEw7n9zqwerty-04....EL FIN DE LA VIDA EN LA TIERRA LO ASEGURARA", "Quieren proteger el mundo pero no quieren que cambie.......", "Como salvar a la humanidad si no se le permite evolucionar........","lugares oscuros, que no pueden ser espejos de tu verdad", "Decis que solo veo las cosas negativas de nuestro mundo pero en realidad,solo veo aquello que se puede arreglar", "nosotros creamos a nuestros propios demonios", "Pero como siempre digo, trata a amigos y enemigo bien por igual. Y espera a averiguar cuál es cual.", "Te voy a mostrar algo hermoso. Gente gritando por misericordia.", "Típico de los humanos: rasgan la superficie, pero nunca se les ocurre ver el interior.","Tenemos que evolucionar. No hay lugar para los débiles.", "No hay hilos atándome", "Que bueno que te interese, porque aprovecharé que están aquí para explicar mi terrible plan", "La raza humana tendrá cientos de oportunidades para mejorar.", "He pensado mucho en los meteoros, en la pureza que hay en ellos ¡Bum! El fin"];
+  var frase = frases[Math.floor(Math.random() * frases.length)];
 
+
+  client.say(channel, `${frase}`)
+
+    
+}
 else if (commandName === "!floripondio") {
 
   
    client.say(channel, `floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio floripondio `)
 
 }
-
 
 })
