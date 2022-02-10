@@ -660,9 +660,9 @@ else if (commandName === "!ayllon") {
   client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia 👉 SPOTIFY: https://open.spotify.com/artist/3X6Ziq4TUUnwp0tfnLzHEM   NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (commandName === "!sera") {
+else if (commandName === "!ayllon") {
   
-  client.say(channel, ` video de la cancion sera de ayllonmusic https://www.youtube.com/watch?v=JFuHJCc2IAE`)
+  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia 👉 SPOTIFY: https://open.spotify.com/artist/3X6Ziq4TUUnwp0tfnLzHEM   NO OLVIDEIS SEGUIRLO!!! `)
 
 }
 else if (commandName === "!anasañiz") {

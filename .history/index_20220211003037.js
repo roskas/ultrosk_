@@ -662,7 +662,7 @@ else if (commandName === "!ayllon") {
 }
 else if (commandName === "!sera") {
   
-  client.say(channel, ` video de la cancion sera de ayllonmusic https://www.youtube.com/watch?v=JFuHJCc2IAE`)
+  client.say(channel, ``)
 
 }
 else if (commandName === "!anasañiz") {
