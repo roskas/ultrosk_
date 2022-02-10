@@ -657,7 +657,7 @@ else if (commandName === "!ceciliaorson") {
 }
 else if (commandName === "!ayllon") {
   
-  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia 👉 SPOTIFY: https://open.spotify.com/artist/3X6Ziq4TUUnwp0tfnLzHEM   NO OLVIDEIS SEGUIRLO!!! `)
+  client.say(channel, `No olvides seguir a AyllonMusic 👉 YOUTUBE: https://www.youtube.com/user/Musicoenterapia 👉 Y: https://open.spotify.com/artist/3X6Ziq4TUUnwp0tfnLzHEM   NO OLVIDEIS SEGUIRLO!!! `)
 
 }
 
