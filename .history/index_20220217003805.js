@@ -681,6 +681,21 @@ else if (commandName === "!ghostzone") {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 else if (commandName === "!Leo") {
   
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)

@@ -671,11 +671,22 @@ else if (commandName === "!anasañiz") {
 
 }
 
-else if (commandName === "!ghostzone") {
-  
-  client.say(channel, `Podéis apoyar a Ghost Zone aquí, denle su buen like https://www.youtube.com/channel/UCYGS9pxYygi5EvacIeFTbHA`)
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
