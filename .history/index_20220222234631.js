@@ -579,7 +579,7 @@ else if (commandName === "!victor") {
 }
 
 
-else if (commandName === "!feg") {
+else if (commandName === "!") {
   
   client.say(channel, `échale un me gusta a los vecinos de Zambrana, la FeRecords https://www.youtube.com/channel/UC1iA4-8P4FdveTOIS8KmxKg `)
 

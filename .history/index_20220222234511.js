@@ -579,19 +579,12 @@ else if (commandName === "!victor") {
 }
 
 
-else if (commandName === "!feg") {
-  
-  client.say(channel, `échale un me gusta a los vecinos de Zambrana, la FeRecords https://www.youtube.com/channel/UC1iA4-8P4FdveTOIS8KmxKg `)
-
-}
 else if (commandName === "!kike") {
   
   client.say(channel, `No olvides seguir a Kike en sus redes 👉INSTAGRAM https://www.instagram.com/kikeperezrijo 👉TWITCH https://www.twitch.tv/kikeperezrijo `)
 
 }
-
-
-
+échale un me gusta a los vecinos de Zambrana https://www.youtube.com/channel/UC1iA4-8P4FdveTOIS8KmxKg
 else if (commandName === "!fromguer") {
   
   client.say(channel, ` no olvides seguir a Fran en sus redes 👉TWITCH https://www.twitch.tv/fromguer 👉DISCORD https://discord.gg/aHfFDYx 👉INSTAGRAM https://www.instagram.com/fromguer/ 👉YOUTUBE https://www.youtube.com/fromguer 👉 TWUITTER https://twitter.com/fromguer 👉WEB https://fromguer.com/ `)
