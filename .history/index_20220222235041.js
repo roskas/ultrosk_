@@ -581,7 +581,7 @@ else if (commandName === "!victor") {
 
 else if (commandName === "!fe") {
   
-  client.say(channel, `échale un me gusta a los vecinos de Zambrana, la FeRecords 👉YOUTUBE https://www.youtube.com/channel/UC1iA4-8P4FdveTOIS8KmxKg INSTAGRAM https://www.instagram.com/laferecords.es/ `)
+  client.say(channel, `échale un me gusta a los vecinos de Zambrana, la FeRecords https://www.youtube.com/channel/UC1iA4-8P4FdveTOIS8KmxKg INSTAGRAM https://www.instagram.com/@laferecords `)
 
 }
 else if (commandName === "!kike") {
