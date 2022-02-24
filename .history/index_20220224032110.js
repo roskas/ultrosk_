@@ -591,7 +591,7 @@ else if (commandName === "!kike") {
 }
 else if (commandName === "!lista") {
   
-  client.say(channel, `LISTADO DE LAS CANCIONES: Streaming de Rico, Ateo, Ay papá, No puedo cargar, Millions chorizos, Procesionaria, Si huele apene, Onmicron, Lo sabe mi intestino, Hago spinning más que tú, Stevia, Un bonito final, El baño, Sin mascarilla me quedé, Invisible, Pelos y machitos, Take on me ohaio, Call me baby, La berrea, En silencio, No me cambies por un vibrador, Sotana suelta, Frio amor `)
+  client.say(channel, `LISTADO DE LAS CANCION `)
 
 }
 
