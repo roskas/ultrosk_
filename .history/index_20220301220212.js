@@ -745,25 +745,25 @@ else if (message.startsWith("!dfrios") && (user.username == "rosk_007" || user.u
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('ultrosk_','dedosfriostwitch')
+  client.host ('ultrosk_','zambraverso')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('versogame','dedosfriostwitch')
+  client.host ('versogame','zambraverso')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('potajontas','dedosfriostwitch')
+  client.host ('potajontas','zambraverso')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('man_darinas','dedosfriostwitch')
+  client.host ('man_darinas','zambraverso')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
