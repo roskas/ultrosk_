@@ -691,7 +691,7 @@ else if (commandName === "!ghostzone") {
 
 else if (commandName === "!juanesb") {
   
-  client.say(channel, `No olvides seguir a Juan Escalante en sus redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 TWITTER: https://twitter.com/juanesbe `)
+  client.say(channel, `No olvides seguir a  redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 INSTAGRAM: https://www.instagram.com/anasanniz/ `)
 
 }
 
