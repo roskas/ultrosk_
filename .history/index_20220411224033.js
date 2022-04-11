@@ -694,9 +694,9 @@ else if (commandName === "!juanesb") {
   client.say(channel, `No olvides seguir a Juan Escalante en sus redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 TWITTER: https://twitter.com/juanesbe `)
 
 }
-else if (commandName === "!marshall") {
+else if (commandName === "!juanesb") {
   
-  client.say(channel, `No olvides seguir a Miguel Ángel en sus redes 👉 INSTAGRAM https://www.instagram.com/marshallflashmusic/ 👉 TWITTER https://twitter.com/Marshall_Flash 👉 YOUTUBE https://www.youtube.com/channel/UCdhPLVRL3Ujmy62r_Ezm0CQ `)
+  client.say(channel, `No olvides seguir a Juan Escalante en sus redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 TWITTER: https://twitter.com/juanesbe `)
 
 }
 

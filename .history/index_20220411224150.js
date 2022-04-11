@@ -689,6 +689,16 @@ else if (commandName === "!ghostzone") {
 
 }
 
+else if (commandName === "!juanesb") {
+  
+  client.say(channel, `No olvides seguir a Juan Escalante en sus redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 TWITTER: https://twitter.com/juanesbe `)
+
+}
+else if (commandName === "!marshall") {
+  
+  client.say(channel, `No olvides seguir a Miguel Ánge en sus redes 👉 INSTAGRAM 👉 TWITTER 👉 YOUTUBE https://www.youtube.com/channel/UCdhPLVRL3Ujmy62r_Ezm0CQ `)
+
+}
 
 
 
@@ -736,34 +746,34 @@ else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.u
 
 
 
-else if (message.startsWith("!d") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame"  )) {
+else if (message.startsWith("!dfrios") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame"  )) {
  
     
-  client.host ('rosk_007','zambraverso')
+  client.host ('rosk_007','dedosfriostwitch')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('ultrosk_','zambraverso')
+  client.host ('ultrosk_','dedosfriostwitch')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('versogame','zambraverso')
+  client.host ('versogame','dedosfriostwitch')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('potajontas','zambraverso')
+  client.host ('potajontas','dedosfriostwitch')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)
       //
   });
-  client.host ('man_darinas','zambraverso')
+  client.host ('man_darinas','dedosfriostwitch')
   .then((data) => {
     
   }).catch((err) => {console.log(`${err}`)

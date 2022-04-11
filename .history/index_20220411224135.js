@@ -696,7 +696,7 @@ else if (commandName === "!juanesb") {
 }
 else if (commandName === "!marshall") {
   
-  client.say(channel, `No olvides seguir a Miguel Ángel en sus redes 👉 INSTAGRAM https://www.instagram.com/marshallflashmusic/ 👉 TWITTER https://twitter.com/Marshall_Flash 👉 YOUTUBE https://www.youtube.com/channel/UCdhPLVRL3Ujmy62r_Ezm0CQ `)
+  client.say(channel, `No olvides seguir a Miguel Ánge en sus redes 👉 INSTAGRAM 👉 TWITTER: YOUTUBE  `)
 
 }
 
