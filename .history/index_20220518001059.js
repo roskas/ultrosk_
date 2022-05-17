@@ -691,10 +691,20 @@ else if (commandName === "!ghostzone") {
 
 else if (commandName === "!juanesb") {
   
-  client.say(channel, `No olvides seguir a us redes 👉 WEB https://www.anasañiz.com  👉 INSTAGRAM: https://www.instagram.com/anasanniz/ `)
+  client.say(channel, `No olvides seguir a Juan Escalante en sus redes 👉 INSTAGRAM https://www.instagram.com/juanesbe0 👉 TWITTER: https://twitter.com/juanesbe `)
+
+}
+else if (commandName === "!marshall") {
+  
+  client.say(channel, `No olvides seguir a Miguel Ángel en sus redes 👉 INSTAGRAM https://www.instagram.com/marshallflashmusic/ 👉 TWITTER https://twitter.com/Marshall_Flash 👉 YOUTUBE https://www.youtube.com/channel/UCdhPLVRL3Ujmy62r_Ezm0CQ `)
 
 }
 
+else if (commandName === "!marshall") {
+  
+  client.say(channel, `No olvides seguir a Miguel Ángel en sus redes 👉 INSTAGRAM https://www.instagram.com/marshallflashmusic/ 👉 TWITTER https://twitter.com/Marshall_Flash 👉 YOUTUBE https://www.youtube.com/channel/UCdhPLVRL3Ujmy62r_Ezm0CQ `)
+
+}
 
 
 else if (commandName === "!Leo") {
@@ -702,7 +712,8 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame"  )) {
+else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versotonse?
+"  )) {
  
     
   client.host ('rosk_007','zambraverso')

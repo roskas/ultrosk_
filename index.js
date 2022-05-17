@@ -700,7 +700,11 @@ else if (commandName === "!marshall") {
 
 }
 
+else if (commandName === "!uebazos") {
+  
+  client.say(channel, `No le perdais la pista a LOS PARANORMALES, dales un buen follow en YouTube https://www.youtube.com/channel/UC4GCUC3W4_wZWpdRuahvjTQ`)
 
+}
 
 
 else if (commandName === "!Leo") {
@@ -708,7 +712,8 @@ else if (commandName === "!Leo") {
   client.say(channel, `No olvides seguir a Leo Susana  en sus redes 👉  FACEBOOK https://www.facebook.com/leosusana  👉 INSTAGRAM https://www.instagram.com/leo_susana/ 👉 YOUTUBE https://www.youtube.com/LeoSusana  👉 TWITTER https://twitter.com/leosusana 👉 SPOTIFY https://open.spotify.com/artist/5dMQC3AxuR45o3jlLbVkuB  NO OLVIDEIS SEGUIRLO!!! `)
 
 }
-else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versogame"  )) {
+else if (message.startsWith("!zambri") && (user.username == "rosk_007" || user.username == "potajontas" || user.username == "mandarinas" || user.username == "zambraverso" || user.username == "versotonse?
+"  )) {
  
     
   client.host ('rosk_007','zambraverso')
