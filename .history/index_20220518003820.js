@@ -707,7 +707,7 @@ else if (commandName === "!uebazos") {
 }
 else if (commandName === "!mornings") {
   
-  client.say(channel, `si quieres puedes colgar tu desayuno (o el almuerzo) en discord -Sección mornings- y lo comentamos en el programa de la mañana ¡Que el Morning te acompañe!`)
+  client.say(channel, `No le perdais la pista a LOS PARANORMALES, dales un buen follow en YouTube https://www.youtube.com/channel/UC4GCUC3W4_wZWpdRuahvjTQ`)
 
 }
 
