@@ -710,7 +710,7 @@ else if (commandName === "!mornings") {
   client.say(channel, `No le perdais la pista a LOS PARANORMALES, dales un buen follow en YouTube https://www.youtube.com/channel/UC4GCUC3W4_wZWpdRuahvjTQ`)
 
 }
-else if (commandName === "!testeo") {
+else if (commandName === "!test") {
   
   client.say(channel, `No le perdais la pista a LOS PARANORMALES, dales un buen follow en YouTube https://www.youtube.com/channel/UC4GCUC3W4_wZWpdRuahvjTQ`)
 
