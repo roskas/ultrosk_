@@ -606,7 +606,7 @@ else if (commandName === "!view") {
 }
 else if (commandName === "!encuesta") {
   
-  client.say(channel, `/me Si no te salen las encuestas o predicciones, dale al F5 en el ordenador, o sal y vuelve a entrar si estás con el movil ) `)
+  client.say(channel, `/me Si quieres poner un enlace, mándalo por susurro a los moderadores y lo ponemos (no se pueden poner links en el chat, sorry univer93Zambrana ) `)
 
 }
 else if (commandName === "!lista") {

@@ -591,22 +591,7 @@ else if (commandName === "!kike") {
 }
 else if (commandName === "!hostealo") {
   
-  client.say(channel, `⚠️ Puedes hostearnos escribiendo en tu chat: "/host @zambraverso" o desde el móvil: icono de la flecha (parte superior derecha), "alojar canal" `)
-
-}
-else if (commandName === "!enlaces") {
-  
-  client.say(channel, `/me Si quieres poner un enlace, mándalo por susurro a los moderadores y lo ponemos (no se pueden poner links en el chat, sorry univer93Zambrana ) `)
-
-}
-else if (commandName === "!view") {
-  
-  client.say(channel, `/me Recuerda que si quieres dejar la view, silencia la pestaña (con click derecho) y no el reproductor! Asi la visita sigue contando para twitch ) `)
-
-}
-else if (commandName === "!encuesta") {
-  
-  client.say(channel, `/me Si no te salen las encuestas o predicciones, dale al F5 en el ordenador, o sal y vuelve a entrar si estás con el movil ) `)
+  client.say(channel, `No olvides seguir a Kike en sus redes 👉INSTAGRAM https://www.instagram.com/kikeperezrijo 👉TWITCH https://www.twitch.tv/kikeperezrijo `)
 
 }
 else if (commandName === "!lista") {
