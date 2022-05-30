@@ -717,7 +717,11 @@ else if (commandName === "!test3") {
 }
 else if (commandName === "!caca"){
 
-  client.say(channel,"univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka")
+  client.say(channel,"else if (commandName === "!correo"){
+
+  client.say(channel,"👉 Correo del canal: 	info@zambraverso.es")
+
+}")
 
 }
 else if (commandName === "!Leo") {

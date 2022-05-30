@@ -715,9 +715,9 @@ else if (commandName === "!test3") {
   client.say(channel, `No le perdais la pista a LOS PARANORMALES, dales un buen follow en YouTube https://www.youtube.com/channel/UC4GCUC3W4_wZWpdRuahvjTQ`)
 
 }
-else if (commandName === "!caca"){
+else if (commandName === "!correo"){
 
-  client.say(channel,"univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka univer93kaka")
+  client.say(channel,"👉 Correo del canal: 	info@zambraverso.es")
 
 }
 else if (commandName === "!Leo") {
