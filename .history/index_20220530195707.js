@@ -599,7 +599,7 @@ else if (commandName === "!lista") {
   5- Millon dolar chorizo
   6- No te creo
   7- Cuando compres jamon
-  8- No me cambies por un vibrador
+  8- No me cambies por un vivrador
   9- Vamos juntos al Zara
   10- Sin mascarilla
   11- Ay papa
