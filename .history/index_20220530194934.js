@@ -625,12 +625,7 @@ else if (commandName === "!lista") {
   31- Pelitos y machotes
   32- No mas lentejas
   34- La berrea
-  35- La cancion de Carmen (resistire)
-  36- Streaming de rico
-  37- Como yo strimeo
-  38- Por fin hago caca
-  39- Carmen porter´s song ( me rasco todo el ojete)
-  40- La tostadora
+  a cancion de Carmen
   `)
 
 }

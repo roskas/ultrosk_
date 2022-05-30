@@ -620,17 +620,7 @@ else if (commandName === "!lista") {
   26- Mi comunidad
   27- Muy pesados los de vodafone
   28- Caca en el ohio
-  29- Malamente
-  30- No puedo cagar
-  31- Pelitos y machotes
-  32- No mas lentejas
-  34- La berrea
-  35- La cancion de Carmen (resistire)
-  36- Streaming de rico
-  37- Como yo strimeo
-  38- Por fin hago caca
-  39- Carmen porter´s song ( me rasco todo el ojete)
-  40- La tostadora
+  29- malamento
   `)
 
 }

@@ -607,30 +607,7 @@ else if (commandName === "!lista") {
   13- Hey, soy streamer
   14- invisible
   15- Si huele a pene
-  16- No me van a detener
-  17- Hazme la colada
-  18- Imagina ( traitor´s song)
-  19- En el baño de mi casa
-  20- Al punto de sal
-  21- Sotana Suelta
-  22- Robarte Bien
-  23- He pasado el omicron
-  24- Frio Amor
-  25- El omicron
-  26- Mi comunidad
-  27- Muy pesados los de vodafone
-  28- Caca en el ohio
-  29- Malamente
-  30- No puedo cagar
-  31- Pelitos y machotes
-  32- No mas lentejas
-  34- La berrea
-  35- La cancion de Carmen (resistire)
-  36- Streaming de rico
-  37- Como yo strimeo
-  38- Por fin hago caca
-  39- Carmen porter´s song ( me rasco todo el ojete)
-  40- La tostadora
+  16
   `)
 
 }
