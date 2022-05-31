@@ -604,14 +604,14 @@ else if (commandName === "!view") {
   client.say(channel, `/me Recuerda que si quieres dejar la view, silencia la pestaña (con click derecho) y no el reproductor! Asi la visita sigue contando para twitch ) `)
 
 }
-else if (commandName === "!hora") {
+else if (commandName === "!encuesta") {
   
-  client.say(channel, ` /me si quieres puedes colgar tu merienda (o cena) en discord -Sección LA HORA PERFECTA- y lo comentamos en el programa ¡Bienvenidos a tu hora, la perfecta ^^!`)
+  client.say(channel, `/me Si no te salen las encuestas o predicciones, dale al F5 en el ordenador, o sal y vuelve a entrar si estás con el movil ) `)
 
 }
-else if (commandName === "!sub") {
+else if (commandName === "!encuesta") {
   
-  client.say(channel, `/announce subscripción es canción`)
+  client.say(channel, `/me Si no te salen las encuestas o predicciones, dale al F5 en el ordenador, o sal y vuelve a entrar si estás con el movil ) `)
 
 }
 else if (commandName === "!lista") {
