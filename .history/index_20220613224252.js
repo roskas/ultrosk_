@@ -609,9 +609,9 @@ else if (commandName === "!view") {
   client.say(channel, `/me Recuerda que si quieres dejar la view, silencia la pestaña (con click derecho) y no el reproductor! Asi la visita sigue contando para twitch ) `)
 
 }
-else if (commandName === "!pod") {
+else if (commandName === "!view") {
   
-  client.say(channel, `/me Podeis seguir aqui a Podcaliptus Bonbon en Iboox y en youtube https://www.youtube.com/channel/UCo-NmxhpPD0pykLnTCZAyrg`)
+  client.say(channel, `/me Recuerda que si quieres dejar la view, silencia la pestaña (con click derecho) y no el reproductor! Asi la visita sigue contando para twitch ) `)
 
 }
 else if (commandName === "!hora") {

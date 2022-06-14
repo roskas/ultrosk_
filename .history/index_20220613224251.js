@@ -609,11 +609,7 @@ else if (commandName === "!view") {
   client.say(channel, `/me Recuerda que si quieres dejar la view, silencia la pestaña (con click derecho) y no el reproductor! Asi la visita sigue contando para twitch ) `)
 
 }
-else if (commandName === "!pod") {
-  
-  client.say(channel, `/me Podeis seguir aqui a Podcaliptus Bonbon en Iboox y en youtube https://www.youtube.com/channel/UCo-NmxhpPD0pykLnTCZAyrg`)
 
-}
 else if (commandName === "!hora") {
   
   client.say(channel, `/me si quieres puedes colgar tu merienda (o cena) en discord -Sección LA HORA PERFECTA- y lo comentamos en el programa ¡Bienvenidos a tu hora, la perfecta ^^!`)
